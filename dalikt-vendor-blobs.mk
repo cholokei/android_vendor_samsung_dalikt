@@ -155,6 +155,11 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
 	vendor/samsung/dalikt/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so
 
+# USB
+PRODUCT_COPY_FILES += \
+	vendor/samsung/dalikt/proprietary/bin/usbhub:system/bin/usbhub \
+	vendor/samsung/dalikt/proprietary/bin/usbhub_init:system/bin/usbhub_init
+
 # Unsorted
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
@@ -163,6 +168,4 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/bin/btnvtool:system/bin/btnvtool \
 	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
 	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
-	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
-	vendor/samsung/dalikt/proprietary/bin/usbhub:system/bin/usbhub \
-	vendor/samsung/dalikt/proprietary/bin/usbhub_init:system/bin/usbhub_init
+	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex
