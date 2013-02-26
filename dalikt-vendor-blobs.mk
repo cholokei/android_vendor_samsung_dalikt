@@ -61,6 +61,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
 	vendor/samsung/dalikt/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
 	vendor/samsung/dalikt/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
+	vendor/samsung/dalikt/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+	vendor/samsung/dalikt/proprietary/lib/libloc_ext.so:system/lib/libloc_ext.so \
+	vendor/samsung/dalikt/proprietary/lib/libgps.so:system/lib/libgps.so \
 	vendor/samsung/dalikt/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so
 
 # Multimedia
@@ -161,7 +164,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
 	vendor/samsung/dalikt/proprietary/bin/port-bridge:system/bin/port-bridge \
 	vendor/samsung/dalikt/proprietary/bin/btnvtool:system/bin/btnvtool \
-	vendor/samsung/dalikt/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
 	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
 	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
 	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex
