@@ -127,52 +127,52 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd 
 
 # WiFi bcm4330
-#PRODUCT_COPY_FILES += \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/wl:system/etc/wifi/wl \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt
+PRODUCT_COPY_FILES += \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/wl:system/etc/wifi/wl \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt
 
 # WiFi bcm4330 b2
-#PRODUCT_COPY_FILES += \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_sta_b2.bin:system/etc/wifi/bcm4330_sta_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_mfg_b2.bin:system/etc/wifi/bcm4330_mfg_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_apsta_b2.bin:system/etc/wifi/bcm4330_apsta_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_p2p_b2.bin:system/etc/wifi/bcm4330_p2p_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net_b2.txt:system/etc/wifi/nvram_net_b2.txt \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg_b2.txt:system/etc/wifi/nvram_mfg_b2.txt \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt_semcove:system/etc/wifi/nvram_mfg.txt_semcove
+PRODUCT_COPY_FILES += \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_sta_b2.bin:system/etc/wifi/bcm4330_sta_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_mfg_b2.bin:system/etc/wifi/bcm4330_mfg_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_apsta_b2.bin:system/etc/wifi/bcm4330_apsta_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_p2p_b2.bin:system/etc/wifi/bcm4330_p2p_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net_b2.txt:system/etc/wifi/nvram_net_b2.txt \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg_b2.txt:system/etc/wifi/nvram_mfg_b2.txt \
+	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt_semcove:system/etc/wifi/nvram_mfg.txt_semcove
 
 # WiFi bcmdhd
-PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-	vendor/samsung/dalikt/proprietary/etc/wifi/wl:system/etc/wifi/wl \
-	vendor/samsung/dalikt/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+#PRODUCT_COPY_FILES += \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/wl:system/etc/wifi/wl \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # WiFi bcmdhd b2
-PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_sta_b2.bin:system/etc/wifi/bcmdhd_sta_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_mfg_b2.bin:system/etc/wifi/bcmdhd_mfg_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_apsta_b2.bin:system/etc/wifi/bcmdhd_apsta_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_p2p_b2.bin:system/etc/wifi/bcmdhd_p2p_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt_b2:system/etc/wifi/nvram_net.txt_b2 \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt_b2:system/etc/wifi/nvram_mfg.txt_b2 \
-	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt_semcove:system/etc/wifi/nvram_mfg.txt_semcove
+#PRODUCT_COPY_FILES += \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_sta_b2.bin:system/etc/wifi/bcmdhd_sta_b2.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_mfg_b2.bin:system/etc/wifi/bcmdhd_mfg_b2.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_apsta_b2.bin:system/etc/wifi/bcmdhd_apsta_b2.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_p2p_b2.bin:system/etc/wifi/bcmdhd_p2p_b2.bin \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt_b2:system/etc/wifi/nvram_net.txt_b2 \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt_b2:system/etc/wifi/nvram_mfg.txt_b2 \
+#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt_semcove:system/etc/wifi/nvram_mfg.txt_semcove
 
 # NFC
 PRODUCT_COPY_FILES += \
