@@ -27,10 +27,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
 	vendor/samsung/dalikt/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so
 
-# Common shared lib
-PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so
-
 # CPU management
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/bin/mpdecision:system/bin/mpdecision
@@ -58,17 +54,18 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
 	vendor/samsung/dalikt/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so
 
+# OMX FW
+PRODUCT_COPY_FILES += \
+	vendor/samsung/dalikt/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
+
 # GPS
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
 	vendor/samsung/dalikt/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
-	vendor/samsung/dalikt/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-	vendor/samsung/dalikt/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-	vendor/samsung/dalikt/proprietary/lib/libloc_ext.so:system/lib/libloc_ext.so \
-	vendor/samsung/dalikt/proprietary/lib/libgps.so:system/lib/libgps.so \
-	vendor/samsung/dalikt/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so
+	vendor/samsung/dalikt/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
+	vendor/samsung/dalikt/proprietary/lib/librpc.so:system/lib/librpc.so
 
-# Multimedia
+# Audio
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
 	vendor/samsung/dalikt/proprietary/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \
@@ -79,11 +76,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libaudioparsers.so:system/lib/libaudioparsers.so \
 	vendor/samsung/dalikt/proprietary/lib/libaudcal.so:system/lib/libaudcal.so
 
-# OMX FW
-PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
-
-# RIL, modem, Q6
+# Radio
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/bin/netmgrd:system/bin/netmgrd \
 	vendor/samsung/dalikt/proprietary/bin/ks:system/bin/ks \
@@ -107,6 +100,11 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
 	vendor/samsung/dalikt/proprietary/lib/libidl.so:system/lib/libidl.so \
 	vendor/samsung/dalikt/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+	vendor/samsung/dalikt/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+	vendor/samsung/dalikt/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
+	vendor/samsung/dalikt/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+	vendor/samsung/dalikt/proprietary/lib/libfactoryutil.so:system/lib/lib/libfactoryutil.so \
+	vendor/samsung/dalikt/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	vendor/samsung/dalikt/proprietary/lib/libdiag.so:system/lib/libdiag.so \
 	vendor/samsung/dalikt/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
 
@@ -118,78 +116,46 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
 	vendor/samsung/dalikt/proprietary/etc/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
 	vendor/samsung/dalikt/proprietary/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt \
-	vendor/samsung/dalikt/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so 
+	vendor/samsung/dalikt/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so 
 
-# Service binaries
+# WiFi
 PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/bin/immvibed:system/bin/immvibed \
-	vendor/samsung/dalikt/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
-	vendor/samsung/dalikt/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd 
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+	vendor/samsung/dalikt/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
-# WiFi bcm4330
+# WiFi b2
 PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_mfg.bin:system/etc/wifi/bcm4330_mfg.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_apsta.bin:system/etc/wifi/bcm4330_apsta.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_p2p.bin:system/etc/wifi/bcm4330_p2p.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/wl:system/etc/wifi/wl \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt
-
-# WiFi bcm4330 b2
-PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_sta_b2.bin:system/etc/wifi/bcm4330_sta_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_mfg_b2.bin:system/etc/wifi/bcm4330_mfg_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_apsta_b2.bin:system/etc/wifi/bcm4330_apsta_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/bcm4330_p2p_b2.bin:system/etc/wifi/bcm4330_p2p_b2.bin \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net_b2.txt:system/etc/wifi/nvram_net_b2.txt \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg_b2.txt:system/etc/wifi/nvram_mfg_b2.txt \
-	vendor/samsung/dalikt/proprietary/etc/wifi_bcm4330/nvram_mfg.txt_semcove:system/etc/wifi/nvram_mfg.txt_semcove
-
-# WiFi bcmdhd
-#PRODUCT_COPY_FILES += \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/wl:system/etc/wifi/wl \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
-
-# WiFi bcmdhd b2
-#PRODUCT_COPY_FILES += \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_sta_b2.bin:system/etc/wifi/bcmdhd_sta_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_mfg_b2.bin:system/etc/wifi/bcmdhd_mfg_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_apsta_b2.bin:system/etc/wifi/bcmdhd_apsta_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/bcmdhd_p2p_b2.bin:system/etc/wifi/bcmdhd_p2p_b2.bin \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt_b2:system/etc/wifi/nvram_net.txt_b2 \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt_b2:system/etc/wifi/nvram_mfg.txt_b2 \
-#	vendor/samsung/dalikt/proprietary/etc/wifi_bcmdhd/nvram_mfg.txt_semcove:system/etc/wifi/nvram_mfg.txt_semcove
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_sta_b2.bin:system/etc/wifi/bcmdhd_sta_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_mfg_b2.bin:system/etc/wifi/bcmdhd_mfg_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_apsta_b2.bin:system/etc/wifi/bcmdhd_apsta_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_p2p_b2.bin:system/etc/wifi/bcmdhd_p2p_b2.bin \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt_b2:system/etc/wifi/nvram_net.txt_b2 \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_net.txt_semcove:system/etc/wifi/nvram_net.txt_semcove \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt_b2:system/etc/wifi/nvram_mfg.txt_b2 \
+	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt_semcove:system/etc/wifi/nvram_mfg.txt_semcove
 
 # NFC
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
-	vendor/samsung/dalikt/proprietary/lib/libpn544_fw.so:system/lib/libpn544_fw.so
+	vendor/samsung/dalikt/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
 
-# USB
+# Thermald
 PRODUCT_COPY_FILES += \
-	vendor/samsung/dalikt/proprietary/bin/usbhub:system/bin/usbhub \
-	vendor/samsung/dalikt/proprietary/bin/usbhub_init:system/bin/usbhub_init
+	vendor/samsung/dalikt/proprietary/bin/thermald:system/bin/thermald \
+	vendor/samsung/dalikt/proprietary/etc/thermald.conf:system/etc/thermald.conf \
+	vendor/samsung/dalikt/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+	vendor/samsung/dalikt/proprietary/lib/libthermal_mitigation_fusion.so:system/lib/libthermal_mitigation_fusion.so \
+	vendor/samsung/dalikt/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation_fusion.so
 
-# Unsorted
+# mmparser extended
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-	vendor/samsung/dalikt/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-	vendor/samsung/dalikt/proprietary/bin/port-bridge:system/bin/port-bridge \
-	vendor/samsung/dalikt/proprietary/bin/btnvtool:system/bin/btnvtool \
-	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
-	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
-	vendor/samsung/dalikt/proprietary/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex
+	vendor/samsung/dalikt/proprietary/lib/libmmosal.so:system/lib/libmmosal.so
+
