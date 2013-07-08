@@ -118,7 +118,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt \
 	vendor/samsung/dalikt/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so 
 
-# WiFi
+# WiFi - murata
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
 	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
@@ -130,7 +130,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
 	vendor/samsung/dalikt/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
-# WiFi b2
+# WiFi - semcove
 PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_sta_b2.bin:system/etc/wifi/bcmdhd_sta_b2.bin \
 	vendor/samsung/dalikt/proprietary/etc/wifi/bcmdhd_mfg_b2.bin:system/etc/wifi/bcmdhd_mfg_b2.bin \
@@ -152,7 +152,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/etc/thermald.conf:system/etc/thermald.conf \
 	vendor/samsung/dalikt/proprietary/lib/libdsm.so:system/lib/libdsm.so \
 	vendor/samsung/dalikt/proprietary/lib/libthermal_mitigation_fusion.so:system/lib/libthermal_mitigation_fusion.so \
-	vendor/samsung/dalikt/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation_fusion.so
+	vendor/samsung/dalikt/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so
 
 # mmparser extended
 PRODUCT_COPY_FILES += \
