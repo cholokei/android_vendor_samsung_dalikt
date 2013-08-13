@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
 	vendor/samsung/dalikt/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
 	vendor/samsung/dalikt/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-	vendor/samsung/dalikt/proprietary/lib/libfactoryutil.so:system/lib/lib/libfactoryutil.so \
+	vendor/samsung/dalikt/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	vendor/samsung/dalikt/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
 	vendor/samsung/dalikt/proprietary/lib/libdiag.so:system/lib/libdiag.so \
 	vendor/samsung/dalikt/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
