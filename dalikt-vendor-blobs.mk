@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/dalikt/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
 	vendor/samsung/dalikt/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
 	vendor/samsung/dalikt/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
-	vendor/samsung/dalikt/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so
+	vendor/samsung/dalikt/proprietary/lib/hw/camera.vendor.msm8660.so:system/lib/hw/camera.vendor.msm8660.so
 
 # CPU management
 PRODUCT_COPY_FILES += \
